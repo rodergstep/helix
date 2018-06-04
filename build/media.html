@@ -66,7 +66,11 @@
                 <p class="hero__descr">We are excited to engage with the worldwide media soon. Please let us know if we can help with anything until then. </p>
               </div>
             </div>
-            <div class="bg-absolute"> <img class="lazyload" data-srcset="img/hero/media_bl.jpg 381w, img/hero/media.jpg 1366w" /> </div>
+            <div class="bg-absolute">
+              <picture>
+                <source media="(max-width: 480px)" data-srcset="img/hero/media_bl.jpg" />
+                <source data-srcset="img/hero/media.jpg" /> <img data-src="img/hero/media_bl.jpg" class="lazyload"> </picture>
+            </div>
           </div>
         </div>
         <!-- end hero -->
@@ -200,7 +204,11 @@
             </ul>
             <p class="footer__copy ">Copyright @ 2018 HELIX RE Inc. All rights reserved</p>
           </div>
-          <div class="bg-absolute"> <img class="lazyload" data-srcset="img/footer-bg_bl.jpg 381w, img/footer-bg.jpg 1440w" /> </div>
+          <div class="bg-absolute">
+            <picture>
+              <source media="(max-width: 480px)" data-srcset="img/footer-bg_bl.jpg" />
+              <source data-srcset="img/footer-bg.jpg" /> <img data-src="img/footer-bg_bl.jpg" class="lazyload"> </picture>
+          </div>
         </div>
         <div class="footer__menu ">
           <ul class="navbar-nav ">
