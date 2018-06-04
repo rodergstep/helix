@@ -175,7 +175,11 @@
             </ul>
             <p class="footer__copy ">Copyright @ 2018 HELIX RE Inc. All rights reserved</p>
           </div>
-          <div class="bg-absolute"> <img class="lazyload" data-srcset="img/footer-bg_bl.jpg 381w, img/footer-bg.jpg 1440w" /> </div>
+          <div class="bg-absolute">
+            <picture>
+              <source media="(max-width: 480px)" data-srcset="img/footer-bg_bl.jpg" />
+              <source data-srcset="img/footer-bg.jpg" /> <img data-src="img/footer-bg_bl.jpg" class="lazyload"> </picture>
+          </div>
         </div>
         <div class="footer__menu ">
           <ul class="navbar-nav ">
